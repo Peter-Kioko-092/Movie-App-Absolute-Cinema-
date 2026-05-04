@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Absolute Cinema - Movie App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">Absolute Cinema</div>
+        <div class="search-container">
+            <div class="search-box">
+                <input type="text" class="search-input" id="searchInput" placeholder="Search for movies...">
+            </div>
+            <div class="filters">
+                <select id="genreFilter">
+                    <option value="">All Genres</option>
+                </select>
+                <select id="yearFilter">
+                    <option value="">All Years</option>
+                </select>
+                <select id="sortFilter">
+                    <option value="">Sort By</option>
+                    <option value="popularity.desc">Most Popular</option>
+                    <option value="vote_average.desc">Highest Rated</option>
+                    <option value="release_date.desc">Latest Released</option>
+                </select>
+            </div>
+            <button class="clear-btn" id="clearBtn">Clear All</button>
+            <button class="watchlist-toggle-btn" id="watchlistBtn">My List (<span id="listCount">0</span>)</button>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <!-- Watchlist Page (Hidden by default) -->
+        <div id="watchlistSection" style="display: none;">
+            <div class="section-header">
+                <div class="section-title">💖 My Watchlist</div>
+                <button class="close-watchlist" id="closeWatchlist">← Back to Home</button>
+            </div>
+            <div class="movies-grid" id="watchlistGrid"></div>
+        </div>
+
+        <!-- Home Page Content -->
+        <div id="homeContent">
+            <!-- Hero Feature Section -->
+            <div id="heroSection" class="hero-section">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <h1 id="heroTitle">Movie Title</h1>
+                    <div class="hero-meta">
+                        <span id="heroRating">★ 0.0</span>
+                        <span id="heroYear">2024</span>
+                        <span id="heroGenres">Action, Drama</span>
+                    </div>
+                    <p id="heroDesc">Loading movie description...</p>
+                    <div class="hero-buttons">
+                        <button class="play-btn" id="heroTrailerBtn">▶ Watch Trailer</button>
+                        <button class="list-btn-hero" id="heroListBtn">+ My List</button>
+                    </div>
+                </div>
+            </div>
+            <div id="trendingSection">
+                <div class="section-title">🔥 Trending Now</div>
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" id="trendingPrev">&lt;</button>
+                    <div class="carousel" id="trendingCarousel">
+                        <div class="loading">Loading trending movies...</div>
+                    </div>
+                    <button class="carousel-btn next" id="trendingNext">&gt;</button>
+                </div>
+            </div>
+
+            <div class="section-title" id="randomSectionTitle">🎬 Discover Movies</div>
+            <div class="movies-grid" id="moviesGrid">
+                <div class="loading">Loading movies...</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
