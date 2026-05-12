@@ -3,13 +3,13 @@ Here is a professional and stylish README tailored specifically for your **Absol
 
 ---
 
-# 🎬 Absolute Cinema
+#  Absolute Cinema
 
 **Absolute Cinema** is a sleek, responsive, and modern movie discovery web application. It leverages the **TMDB (The Movie Database) API** to provide real-time trending data, high-quality hero features with trailer integration, and a persistent personalized watchlist.
 
 ---
 
-## ✨ Features
+##  Features
 
 *   **Cinematic Hero Section:** Dynamic top-trending movie feature with high-resolution backdrops, metadata, and instant trailer playback.
 *   **Real-time Movie Search:** Instant search results with debounce logic to ensure a smooth user experience.
@@ -21,7 +21,7 @@ Here is a professional and stylish README tailored specifically for your **Absol
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 *   **HTML5:** Semantic structure for optimal accessibility.
 *   **CSS3:** Custom properties (variables), Flexbox, CSS Grid, and high-end animations/shadows.
